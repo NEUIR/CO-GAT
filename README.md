@@ -62,12 +62,12 @@ data/
 ### Train CO-GAT
 **I will show you how to reproduce the results in the CO-GAT paper.**
 
-* For the FEVER dataset Go to the ``cogat-fever`` folder and train the CO-GAT model[checkpoint](https://huggingface.co/yuqinglanok/CO-GAT/tree/main/cogat_electra_large):
+* For the FEVER dataset: Go to the ``cogat-fever`` folder and train the CO-GAT model [checkpoint](https://huggingface.co/yuqinglanok/CO-GAT/tree/main/cogat_electra_large):
 ```
 cd cogat-fever
 bash train_twostep.sh
 ```
-* For the SCIFACT dataset Go to the ``cogat-scifact`` folder and train the CO-GAT model[checkpoint](https://huggingface.co/yuqinglanok/CO-GAT/tree/main/cogat_electra_large_scifact):
+* For the SCIFACT dataset: Go to the ``cogat-scifact`` folder and train the CO-GAT model [checkpoint](https://huggingface.co/yuqinglanok/CO-GAT/tree/main/cogat_electra_large_scifact):
 ```
 cd cogat-scifact
 bash train.sh
