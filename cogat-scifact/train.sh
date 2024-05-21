@@ -1,8 +1,8 @@
 export CUDA_VISIBLE_DEVICES=4
 
 python train.py \
---train_data_path ./data/train_cogat.json \
---valid_data_path ./data/dev_cogat.json \
+--train_data_path ../data/scifact/train_cogat.json \
+--valid_data_path ../data/scifact/dev_cogat.json \
 --model_name_or_path google/electra-base-discriminator \
 --output_dir ./electra_base \
 --num_train_epochs 10 \
@@ -15,8 +15,8 @@ python train.py \
 --hidden_size 768 \
 
 python train.py \
---train_data_path ./data/train_cogat.json \
---valid_data_path ./data/dev_cogat.json \
+--train_data_path ../data/scifact/train_cogat.json \
+--valid_data_path ../data/scifact/dev_cogat.json \
 --model_name_or_path google/electra-large-discriminator \
 --output_dir ./electra_large_preattention \
 --num_train_epochs 10 \
@@ -33,8 +33,8 @@ python train.py \
 #
 python train.py \
 --checkpoint ./electra_large_preattention/save_model.best.pt \
---train_data_path ./data/train_cogat.json \
---valid_data_path ./data/dev_cogat.json \
+--train_data_path ../data/scifact/train_cogat.json \
+--valid_data_path ../data/scifact/dev_cogat.json \
 --model_name_or_path google/electra-large-discriminator \
 --output_dir ./electra_large \
 --num_train_epochs 10 \

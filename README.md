@@ -53,6 +53,8 @@ data/
 │   ├── bert_test.json
 │   └── bert_eval.json
 └──scifact/
+    ├──prediction
+    ├──corpus.jsonl
     ├── train_cogat.json
     ├── dev_cogat.json
     ├── claims_dev.json
