@@ -34,6 +34,10 @@ CO-GAT designs an additional node representation masking mechanism before the gr
 Python==3.7
 Pytorch
 transformers
+prettytable
+scikit-learn
+jsonlines
+pandas
 ```
 We provide the version file `requirements.txt` of all our used packages, if you have any problems configuring the environment, please refer to this document.
 
@@ -53,7 +57,9 @@ data/
 │   ├── bert_train.json
 │   ├── bert_dev.json
 │   ├── bert_test.json
-│   └── bert_eval.json
+│   ├── bert_eval.json
+│   ├── dev_eval.json
+│   └── all_test.json
 └──scifact/
     ├── prediction
     ├── corpus.jsonl
@@ -102,8 +108,8 @@ The results are shown as follows.
 | | Model                               | PREC-S | REC-S |F1-S| PREC-A | REC-A |F1-A|
 |----------------|------------------------------|:------:|:------:|:------:|:------:|:------:|:------:|
 | DEV  | CO_GAT(ELECTRA-base)                             |63.39 |38.80 |48.14 |72.00| 43.06| 53.89 |
-| DEV  | CO_GAT(ELECTRA-large)                             |58.08 |40.81 |47.94| 67.11 |45.05 |53.91|
-| TEST  | CO_GAT(ELECTRA-base)                             |71.49 |48.63 |57.89 |79.58 |54.07 |64.39 |
+| DEV  | CO_GAT(ELECTRA-large)                            |71.49 |48.63 |57.89 |79.58 |54.07 |64.39 | 
+| TEST  | CO_GAT(ELECTRA-base)                             |58.08 |40.81 |47.94| 67.11 |45.05 |53.91|
 | TEST  | CO_GAT(ELECTRA-large)                             |55.31 |47.84 |51.30 |69.64 |52.70 |60.0|
 
 ## Contact
