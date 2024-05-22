@@ -1,5 +1,7 @@
 import json
 import jsonlines
+import numpy as np
+
 corpus = {doc['doc_id']: doc for doc in jsonlines.open("./corpus.jsonl")}
 sci_dev = jsonlines.open("./scifact_dev.jsonl")
 
