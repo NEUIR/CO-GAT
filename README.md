@@ -21,6 +21,8 @@ If you find this work useful, please cite our paper  and give us a shining star 
 ```
 
 ## Overview
+CO-GAT designs an additional node representation masking mechanism before the graph reasoning modeling, which controls the evidence information flow into the graph reasoning model.
+
 <p align="center">
   <img align="middle" src="image/model.png" height="350" alt="CO-GAT"/>
 </p>
