@@ -10,13 +10,12 @@ Click the links below to view our papers and checkpoints
 If you find this work useful, please cite our paper  and give us a shining star 🌟
 
 ```
-@misc{lan2024multievidence,
-      title={Multi-Evidence based Fact Verification via A Confidential Graph Neural Network}, 
-      author={Yuqing Lan and Zhenghao Liu and Yu Gu and Xiaoyuan Yi and Xiaohua Li and Liner Yang and Ge Yu},
-      year={2024},
-      eprint={2405.10481},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@article{Lan2024MultiEvidenceBF,
+  title={Multi-Evidence based Fact Verification via A Confidential Graph Neural Network},
+  author={Yuqing Lan and Zhenghao Liu and Yu Gu and Xiaoyuan Yi and Xiaohua Li and Liner Yang and Ge Yu},
+  journal={IEEE Transactions on Big Data},
+  year={2024},
+  url={https://api.semanticscholar.org/CorpusID:269899642}
 }
 ```
 
